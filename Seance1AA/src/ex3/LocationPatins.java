@@ -43,7 +43,7 @@ public class LocationPatins {
 
 
 		//a compléter
-
+		// TODO Make less complex, not optimised yet.
 		for (int i = 0; i < safes.size(); i++) {
 			if ((int) safes.get(i).get(0) == pointure && (boolean) safes.get(i).get(1)) {
 				safes.get(i).set(1, false);
