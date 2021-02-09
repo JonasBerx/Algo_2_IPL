@@ -8,11 +8,11 @@ public class Test {
 		PlageHoraire p2= new PlageHoraire(LocalDateTime.of(2017,10,12,14,0,0), LocalDateTime.of(2017,10,12,15,0,0));
 		PlageHoraire p3= new PlageHoraire(LocalDateTime.of(2017,10,19,12,0,0), LocalDateTime.of(2017,10,19,13,0,0));
 		Doodle d= new Doodle(p1,p2,p3);
-		boolean[] dispoJean= {true,false,false};
+		boolean[] dispoJean= {true,false,true};
 		d.ajouterDisponibilites("jean", dispoJean);
 		boolean[] dispoMarc= {false,true,true};
 		d.ajouterDisponibilites("marc", dispoMarc);
-		boolean[] dispoLuc= {false,true,false};
+		boolean[] dispoLuc= {false,true,true};
 		d.ajouterDisponibilites("luc", dispoLuc);
 		System.out.println("Jean est-il disponible pour la première date ? " + d.estDisponible("jean", p1));
 		System.out.println("Jean est-il disponible pour la deuxième date ? " + d.estDisponible("jean", p2));

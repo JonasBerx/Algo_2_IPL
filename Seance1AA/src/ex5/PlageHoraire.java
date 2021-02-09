@@ -23,6 +23,4 @@ public class PlageHoraire {
 		return "PlageHoraire [debut=" + debut + ", fin=" + fin
 				+ ", nbParticipantPresent=" + nbParticipantPresent + "]";
 	}
-	
-	
 }
