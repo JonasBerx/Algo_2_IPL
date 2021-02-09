@@ -8,8 +8,11 @@ public class Test {
 		v.add("piano");
 		Academie a = new Academie(v);
 		a.mettreEnAttente("piano", "Christophe");
-		a.mettreEnAttente("piano", "José");
+		a.mettreEnAttente("piano", "Annick");
+		a.mettreEnAttente("piano", "José2");
 		String s= a.attribuerPlace("piano");
+		System.out.println(s);
+		s= a.attribuerPlace("piano");
 		System.out.println(s);
 		s= a.attribuerPlace("piano");
 		System.out.println(s);
