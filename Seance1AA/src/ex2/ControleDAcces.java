@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public class ControleDAcces {
-	Map<Badge, Employe> employes;
+	private Map<Badge, Employe> employes;
+	// TODO Change for badge presence
+
 	public ControleDAcces(){
 		employes = new HashMap<>();
 	}

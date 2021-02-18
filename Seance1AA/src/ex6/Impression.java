@@ -18,4 +18,8 @@ public class Impression {
 		return fichier;
 	}
 
+	public String toString() {
+		return getIdUtilisateur() + ":" + getFichier();
+	}
+
 }

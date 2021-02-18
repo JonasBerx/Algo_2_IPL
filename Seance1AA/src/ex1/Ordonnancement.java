@@ -15,31 +15,13 @@ public class Ordonnancement {
 		for (int i = 0; i < NIVEAU_PRIORITE_MAX; i++) {
 			taches.add(new LinkedList<>());
 		}
-		System.out.println(taches);
 	}
 	public void ajouterTache (String descriptif, int priorite){
 		//Check if linkedlist for prio already exists. if not add create new linkedlist for priority.
 		// Add task to list of prio and then add linkedlist to arraylist of tasks
 		Tache t = new Tache(descriptif, priorite);
 		taches.get(priorite - 1).add(t);
-		/*
-		Utilises totString method to check if output is correct.
-		System.out.println(totString(taches.get(priorite-1)));
-		**/
-
 	}
-	// Testing Purposes
-	@Deprecated
-	public String totString(List<Tache> taches) {
-		String tt = "";
-		for (int i = 0; i < taches.size(); i++) {
-			tt += String.valueOf(taches.get(i).getPriorite());
-		}
-		tt += "\n----";
-		return tt;
-	}
-
-
 	//renvoie la tache prioritaire
 	//renvoie null si plus de tache presente
 	public Tache attribuerTache(){

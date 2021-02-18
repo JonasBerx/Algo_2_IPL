@@ -17,7 +17,6 @@ public class Academie {
 
 			waitingList.put(s, new LinkedList<>());
 		}
-		System.out.println(waitingList);
 	}
 
 	public void mettreEnAttente(String instrument, String nomEleve){
